@@ -1,0 +1,461 @@
+:root {
+    /* background */
+    --c-dark: #141D2D;
+    --c-light: #fff;
+    --c-accent: #FF6B08;
+  
+    --c-dark-blue: #253045; 
+    --c-grey-blue: #4A5771;
+    --c-grey-light: #F1F2F2;
+    --c-grey: #BCC1D2;
+  
+    /* text */
+    --txt-c-dark: var(--c-dark);
+    --txt-c-grey: #4F5B70;
+    --txt-c-grey-light: var(--c-grey-light);
+    --txt-c-accent: var(--c-accent);
+    --txt-c-light: var(--c-light);
+  
+    /* font */
+    --font-main: 'Acrom', sans-serif;
+  
+    /* container width */
+    --vertical-scroll: 20px;
+    --mobile: calc(300px + var(--vertical-scroll));
+    --tablet: calc(640px + var(--vertical-scroll));
+    --desktop: calc(900px + var(--vertical-scroll));
+    --desktop-lg: calc(1146px + var(--vertical-scroll));
+  
+    /* animation */
+    --animation-fast: 0.1s;
+    --animation-slow: 0.3s;
+  }
+  
+  @font-face {
+    font-family: "Acrom";
+    src: url("../fonts/acrom/Acrom-ExtraBold.eot");
+    src: local("Acrom ExtraBold"), local("Acrom-ExtraBold"),
+      url("../fonts/acrom/Acrom-ExtraBold.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/acrom/Acrom-ExtraBold.woff") format("woff"),
+      url("../fonts/acrom/Acrom-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  @font-face {
+      font-family: 'Acrom';
+      src: url('../fonts/acrom/Acrom-Bold.eot');
+      src: local('Acrom Bold'), local('Acrom-Bold'),
+          url('../fonts/acrom/Acrom-Bold.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/acrom/Acrom-Bold.woff') format('woff'),
+          url('../fonts/acrom/Acrom-Bold.ttf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
+  }
+  
+  @font-face {
+      font-family: 'Acrom';
+      src: url('../fonts/acrom/Acrom-Regular.eot');
+      src: local('Acrom Regular'), local('Acrom-Regular'),
+          url('../fonts/acrom/Acrom-Regular.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/acrom/Acrom-Regular.woff') format('woff'),
+          url('../fonts/acrom/Acrom-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+body {
+    font-family: var(--font-main);
+}
+
+/*  COMMON */
+
+.accent-btn {
+    background: var(--c-accent);
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--c-light);
+    padding: 20px 35px;
+    outline: none;
+    border: none;
+}
+
+/*    FRONT PAGE  */
+
+.front-page {
+    width: 320px;
+    background: var(--c-dark);
+    padding: 30px 10px 55px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.front-page-my-name {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    text-transform: uppercase;
+    color: var(--c-accent);
+    text-align: center;
+    margin: 35px 10px 0 0;
+}
+
+.front-page-profession {
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 42px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--c-light);
+    margin-bottom: 20px ;
+}
+
+.front-page-discription {
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--c-light);
+    margin-bottom: 20px ;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.hire-me-btn {
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: var(--c-accent);
+    text-decoration: none;
+    margin: 0 20px 0 0;
+}
+
+.mobile-menu {
+    width: 30px;
+    height: 30px;
+    background: var(--c-accent);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.mobile-menu .fa-bars {
+    color: var(--c-light);
+}
+
+.front-page-gallery-btn {
+    margin-bottom: 40px;
+}
+
+.front-page-my-photo {
+    width: 100px;
+    margin-bottom: 20px ;
+}
+
+.front-page-my-descr {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--txt-c-light);
+    margin-bottom: 0 0 15px 0;
+}
+
+.front-page-my-video-btn {
+    border: 2px solid var(--c-accent);
+    color: var(--txt-c-accent);
+    background: transparent;
+    padding: 10px 40px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.front-page-my-video-btn .fa-play {
+    font-size: 9px;
+    margin-right: 7px ;
+}
+
+.front-page-laptop {
+    width: 250px;
+    margin-bottom: 40px;
+}
+
+/* EXPERIENCE */
+
+.experience-title {
+    width: 240px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--txt-c-light);
+    margin: 0 0 30px 0;
+}
+
+.experience-skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 28px;
+}
+
+.experience-dots {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.experience-dots-item {
+    color: var(--c-grey-blue);
+    font-size: 8px;
+    margin-right: 5px;
+}
+
+.experience-dots-item-accent {
+    color: var(--c-accent);
+}
+
+.experience-text {
+    color: var(--txt-c-light);
+    margin: 0;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* COMMON */
+
+.container {
+    min-width: 320px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 30px 10px 55px 10px;
+}
+
+.container-left {
+    align-items: flex-start;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--txt-c-light);
+}
+
+/* ABOUT PAGE */
+
+.about-title {
+    color: var(--txt-c-dark);
+    text-align: left;
+    width: 280px;
+    margin: 20px 0;
+}
+
+.about-descr {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: var(--txt-c-light);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.about-descr span {
+    background: var(--c-dark-blue);
+    padding: 4px 9px;
+}
+
+.about-text {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 150%;
+    color: var(--c-dark);
+    margin: 0 0 30px 0;
+}
+
+.about-text:last-child {
+    margin-bottom: 0;
+}
+
+.about-img-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.about-img-text {
+    font-weight: bold;
+    font-size: 150px;
+    line-height: 180px;
+    text-transform: uppercase;
+    color: var(--txt-c-grey-light);
+    writing-mode: tb-rl;
+    margin: auto;
+    position: relative;
+}
+
+.about-img {
+    width: 235px;
+    height: 254px;
+    position: absolute;
+    left: -35px;
+    top: 55px;
+}
+
+/* PERSONAL PROJECT */
+
+.personal-projects {
+    background: var(--c-dark);
+}
+
+.personal-project-item-container {
+    padding-top: 40px;
+    background: var(--c-dark-blue);
+    border-radius: 5px 5px 0 0;
+    position: relative;
+}
+
+.personal-project-name {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 150%;
+    color: var(--txt-c-light);
+    margin: 25px 0;
+    display: flex;
+}
+
+.personal-project-img {
+    width: 100%;
+}
+
+.personal-projects-title {
+    margin-top: 20px;
+}
+
+.projet-item-dot-container {
+    display: flex;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+}
+
+.personal-project-item {
+    border-bottom: 1px solid var(--c-grey-blue);
+    margin-bottom: 30px;
+}
+
+.personal-project-item:last-child {
+    margin-bottom: 0;
+}
+
+.projet-item-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--c-grey-blue);
+    margin-right: 7px;
+}
+
+.projet-item-dot:first-child {
+    background: var(--c-accent);
+}
+
+.personal-project-icon {
+    font-size: 18px;
+    color: var(--c-accent);
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+.personal-project-btn {
+    padding: 15px 30px 15px 10px;
+    margin-bottom: 30px;
+}
+
+/* TEAM PROJECT */
+
+.team-projects .container {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.team-projects-title {
+    color: var(--txt-c-dark);
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.team-projects-title-bgd {
+    position: absolute;
+    top: -50px;
+    left: 45px;
+    font-weight: bold;
+    font-size: 150px;
+    line-height: 180px;
+    text-transform: uppercase;
+    color: var(--txt-c-grey-light);
+    z-index: -1;
+}
+
+.team-project-name {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 150%;
+    color: var(--txt-c-dark);
+    margin: 25px 0;
+    display: flex;
+}
+
+.team-project-item {
+    border-bottom: 1px solid var(--c-grey-light);
+    margin-bottom: 30px;
+}
+
+
+.team-project-item:last-child {
+    margin-bottom: 0;
+}
+
