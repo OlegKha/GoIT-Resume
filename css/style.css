@@ -81,6 +81,7 @@ body {
     padding: 20px 35px;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 /*    FRONT PAGE  */
@@ -181,7 +182,7 @@ body {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--txt-c-light);
-    margin-bottom: 0 0 15px 0;
+    margin: 0 0 15px 0;
 }
 
 .front-page-my-video-btn {
@@ -420,6 +421,7 @@ body {
 .team-projects .container {
     position: relative;
     overflow-x: hidden;
+    padding-bottom: 0;
 }
 
 .team-projects-title {
@@ -458,4 +460,207 @@ body {
 .team-project-item:last-child {
     margin-bottom: 0;
 }
+
+/* CALLBACK FORM SECTION */
+
+.callback-form-container {
+    background: var(--c-dark);
+    padding: 35px 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+.callback-form-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--txt-c-light);
+    width: 260px;
+    margin: 0 0 20px 0;
+ }
+
+ .callback-form-descr {
+     font-size: 17px;
+     line-height: 150%;
+     text-align: center;
+     color: var(--txt-c-light);
+     width: 260px;
+     text-align: center;
+     margin: 0 0 30px 0;
+ }
+
+ .callback-form-input {
+     font-size: 17px;
+     line-height: 150%;
+     background: transparent;
+     border: none;
+     outline: none;
+     padding: 10px 10px 15px 10px;
+     border-bottom: 1px solid var(--c-grey-blue);
+     text-align: center;
+     color: var(--txt-c-light);
+     margin-bottom: 30px;
+ }
+
+/* CALCULATOR FORM SECTION */
+
+.calculator {
+    background: var(--c-dark);
+}
+
+.calculator .container {
+    padding-bottom: 75px;
+}
+
+.calculator-icon {
+    width: 195px;
+}
+
+.calculator-descr {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--txt-c-light);
+    margin: 0 0 30px 0;
+}
+
+.calculator-descr span {
+    background: var(--c-accent);
+    padding: 5px;
+}
+
+.calculator-descr .calculator-descr-accent {
+    padding: 5px 10px;
+}
+
+.calculator-title {
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+.calculator-text {
+    font-size: 17px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--txt-c-light);
+    margin: 20px 0 30px 0;
+}
+
+.calculator-form {
+    background: var(--c-light);
+    padding: 30px 25px;
+}
+
+.calculator-form-title {
+   color: var(--txt-c-dark);
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 135%;
+    margin-bottom: 15px;
+}
+
+.calculator-form-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.calculator-form-select {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--c-grey-light);
+    padding: 5px 0 17px 0;
+}
+
+.calculator-form-input-field {
+    margin-right: 10px;
+}
+
+.calculator-form-input-radio-container {
+    display: flex;
+    align-items: center;
+}
+
+.calculator-form-input-label {
+    margin-right: 15px;
+    font-size: 17px;
+    line-height: 150%;
+    color: var(--txt-c-dark);
+}
+
+.calculator-form-total-cost {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 150%;
+    color: var(--txt-c-dark);
+    margin: 0;
+}
+
+.calculator-form-total {
+    color: var(--txt-c-dark);
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 135%;
+    margin: 0;
+}
+
+/* FOOTER */
+
+.footer-my-name {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--txt-c-dark);
+    margin: 0;
+}
+
+.footer-my-profession {
+    font-size: 17px;
+    line-height: 150%;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.footer-my-tel {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 150%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--txt-c-dark);
+    margin-bottom: 15px;
+}
+
+.footer-my-mail {
+    font-size: 17px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--txt-c-dark);
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.social-links-items {
+    font-size: 25px;
+}
+
+.social-links-items-link {
+    margin-right: 35px;
+    text-decoration: none;
+    color: var(--c-dark);
+}
+
+.social-links-items-link:last-child {
+    margin-right: 0;
+}
+
+
 
