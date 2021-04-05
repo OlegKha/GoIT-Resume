@@ -35,7 +35,10 @@
 
         <h1 class="front-page-my-name">[alex tur]</h1>
 
-        <h2 class="front-page-profession">{Frontend} _DEVELOPER</h2>
+        <h2 class="front-page-profession">
+          <span class="profession-part-1">{Frontend}</span>
+          <span class="profession-part-2">_DEVELOPER</span>
+        </h2>
 
         <p class="front-page-description">
           / Using HTML, CSS, JavaScript, React Native and Node.js I help to
@@ -46,14 +49,23 @@
           See my recent works —
         </button>
 
-        <img src="img/my-photo.jpg" alt="" class="front-page-my-photo" />
+        <div class="front-page-my-info">
 
-        <p class="front-page-my-decr">About me in 2 minutes</p>
+          <img src="img/my-photo.jpg" alt="my photo" class="front-page-my-photo" />
 
-        <button class="front-page-my-video-btn" id="my-video-btn">
-          <i class="fas fa-play"></i>
-          PLAY
-        </button>
+          <div class="front-page-about-me-container">
+
+            <p class="front-page-my-decr mobile-element">About me in 2 minutes</p>
+
+            <p class="front-page-my-decr tablet-element">About me<br> in 2 minutes</p>
+
+            <button class="front-page-my-video-btn" id="my-video-btn">
+              <i class="fas fa-play"></i>
+              PLAY
+            </button>
+          </div>
+
+        </div>
 
         <img src="img/laptop.svg" alt="" class="front-page-laptop" />
         <div class="experience-container">
@@ -181,11 +193,20 @@
     <section class="about" id="about">
       <div class="container container-left">
         <h3 class="section-title about-title">I code things from scratch_</h3>
-        <p class="about-descr">
+
+        <p class="about-descr  mobile-element">
           <span>[and help to</span>
           <span>create great web</span>
           <span>apps]</span>
         </p>
+
+        <div class="tablet-element">
+          <p class="about-descr">
+            <span>[and help to create</span> 
+            <span>great web apps]</span>
+          </p>
+        </div>
+
         <div class="about-img-container">
           <p class="about-img-text">
             WEB
@@ -196,10 +217,15 @@
             />
           </p>
         </div>
-        <p class="about-text">
+        <p class="about-text mobile-element">
           / I will help you to create a high-performance Landing Page,
           functional corporate website for your business, interactive web app
           for SaaS, startup, or other services.
+        </p>
+        <p class="about-text tablet-element">
+          / I will help you to create a<br> high-performance Landing Page,<br>
+          functional corporate website for your<br> business, interactive web app
+          for<br> SaaS, startup, or other services.
         </p>
         <p class="about-text">
           / My specialization is front-end development — client side of the web.
@@ -357,15 +383,15 @@
 
     <section class="callback-form">
       <div class="container">
-        <form action="" class="callback-form-container">
+        <form action="" class="callback-form-container" id="callback-form">
           <h3 class="callback-form-title">/Are you minding [a project?]</h3>
           <p class="callback-form-descr">
             Leave a request to discuss the task and technical requirements
           </p>
 
-          <input type="text" class="callback-form-input" placeholder="Name" id="callback-form-input-name"/>
+          <input type="text" class="callback-form-input" placeholder="Name" id="callback-form-input-name" />
           <input
-            type="email"
+            type="emailw"
             class="callback-form-input"
             placeholder="Email"
             id="callback-form-input-email"
@@ -373,7 +399,7 @@
           <input
             type="tel"
             class="callback-form-input"
-            placeholder="+380 (__) ___ - __ - __"
+            placeholder="+38 (0__) ___-__-__"
             id="callback-form-input-phone"
           />
           <input
@@ -387,14 +413,25 @@
 
     <section class="calculator" id="calculator">
       <div class="container">
-        <h3 class="calculator-title section-title">
+        <h3 class="calculator-title section-title mobile-element">
           Calculate_ the cost of a future project
         </h3>
-        <p class="calculator-descr">
-          <span>This is an</span>
-          <span class="calculator-descr-accent">approximate</span>
+        <h3 class="calculator-title section-title tablet-element">
+          Calculate_<br> the cost of a<br> future project
+        </h3>
+        <div class="mobile-element">
+          <p class="calculator-descr">
+            <span>This is an</span>
+            <span class="calculator-descr-accent">approximate</span>
+            <span>calculation.</span>
+          </p>
+        </div>
+
+        <p class="calculator-descr tablet-element">
+          <span>This is an approximate</span>
           <span>calculation.</span>
         </p>
+
         <img
           src="img/calculator.svg"
           alt="calculator"
@@ -452,7 +489,7 @@
               >Personal account and shopping cart:</label
             >
 
-            <div class="calculator-form-input-radio-container" id="calculator-form-input-cart">
+            <div class="calculator-form-input-radio-container"  id="calculator-form-input-cart">
               <input
                 type="radio"
                 class="calculator-form-input-field"
@@ -602,8 +639,8 @@
 
       <!-- REQUEST RECEIVED -->
 
-      <div class="modal modal-request-received" id="request-received">
-        <div class="request-received-container">
+      <div class="modal modal-request-received modal-area-bgd" id="request-received">
+        <div class="request-received-container modal-area-content">
           <i class="fas fa-times modal-close-btn"></i>
           <h3 class="request-received-title">{Thanks}</h3>
           <p class="request-received-primary-msg">
