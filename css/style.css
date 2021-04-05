@@ -27,7 +27,7 @@
   --mobile: calc(300px + var(--vertical-scroll));
   --tablet: calc(640px + var(--vertical-scroll));
   --desktop: calc(900px + var(--vertical-scroll));
-  --desktop-lg: calc(1146px + var(--vertical-scroll));
+  --desktop-lg: calc(1270px + var(--vertical-scroll));
 
   /* animation */
   --animation-fast: 0.1s;
@@ -98,6 +98,7 @@ body {
   outline: none;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .container {
@@ -344,6 +345,19 @@ body {
 .front-page {
   width: 100%;
   background: var(--c-dark);
+}
+
+.front-page-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.front-page-main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .front-page-my-name {
@@ -977,6 +991,7 @@ body {
     margin: 20px 0 30px 0;
     font-size: 55px;
     line-height: 66px;
+    width: 410px;
   }
 
   .profession-part-1 {
@@ -1172,5 +1187,155 @@ body {
 
   .footer-my-mail {
     margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+
+  .container {
+    max-width: var(--desktop-lg);
+  }
+
+  .tablet-element {
+    display: none;
+  }
+  
+  .desktop-element {
+    display: block;
+  }
+
+  .front-page-profession {
+    font-size: 70px;
+    line-height: 84px;
+    width: 510px;
+    margin-left: -60px;
+    margin-bottom: 35px;
+  }
+
+  .experience-wrapper {
+    order: 1;
+  }
+
+  .front-page-main-info {
+    align-items: flex-start;
+    order: 2;
+    z-index: 2;
+    position: relative;
+  }
+
+  .front-page-my-photo {
+    position: absolute;
+    width: 256px;
+    z-index: -1;
+    right: -125px;
+    bottom: 330px;
+  }
+
+  .front-page-description {
+  text-align: left;
+    margin-bottom: 65px;
+
+}
+
+  .front-page-gallery-btn {
+    width: 387px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 90px;
+  }
+
+  .profession-part-2 {
+    margin-left: 50px;
+  }
+
+  .front-page-wrapper {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 115px;
+  }
+
+  .front-page-laptop {
+    position: absolute;
+    bottom: -64px;
+    right: 0;
+    z-index: 1;
+  }
+
+  .front-page-my-info {
+    order: 3;
+  }
+
+  .front-page-my-decr {
+    text-align: right;
+  }
+
+  .front-page-my-name {
+    margin-top: 0;
+  }
+
+  .experience-title {
+    text-align: left;
+  }
+
+  .experience-skill {
+    margin-left: 0;
+  }
+
+  .team-project-item-wrapper,
+  .personal-project-item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .team-project-item,
+  .personal-project-item {
+    width: calc(50% - 20px);
+  }
+
+  .team-project-item:nth-child(odd),
+  .personal-project-item:nth-child(odd) {
+    margin: 0 20px 40px 0;
+  }
+
+  .team-project-item:nth-child(even),
+  .personal-project-item:nth-child(even) {
+    margin: 0 0 40px 20px;
+  }
+
+  .team-projects-title,
+  .personal-projects-title {
+    font-size: 70px;
+    line-height: 84px;
+    width: 530px;
+  }
+
+  .team-projects-title-bgd {
+    font-size: 250px;
+    line-height: 300px;
+    top: 35px;
+    left: 274px;
+  }
+
+  .mobile-menu-items {
+    flex-direction: row;
+  }
+
+  .mobile-menu-item {
+    margin-right: 35px;
+    margin-bottom: 0;
+  }
+
+  .mobile-menu-item:last-child {
+    margin-right: 0;
+  }
+
+  .front-page-main-info {
+    width: 387px;
+  }
+
+  .mobile-menu-items {
+    margin-left: 120px;
   }
 }

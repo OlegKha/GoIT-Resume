@@ -25,15 +25,30 @@
           <a href="" class="logo-link">
             <img src="img/goit-logo.svg" alt="GOIT logo" />
           </a>
+          <div class="desktop-element">
+          <div class="mobile-menu-items">
+            <a href="#about" class="mobile-menu-item">ABOUT</a>
+            <a href="#projects" class="mobile-menu-item">PROJECTS</a>
+            <a href="#calculator" class="mobile-menu-item">COST CALCULATOR</a>
+            <a href="#contacts" class="mobile-menu-item">CONTACTS</a>
+          </div>
+          </div>
+
           <div class="navigation-part">
-            <a href="" class="hire-me-btn">— HIRE ME</a>
+            <a href="#callback-form" class="hire-me-btn">— HIRE ME</a>
+            <div class="mobile-element tablet-element">
             <a href="" class="mobile-menu" id="mobile-menu-btn">
               <i class="fas fa-bars"></i>
             </a>
+            </div>
           </div>
         </nav>
 
-        <h1 class="front-page-my-name">[alex tur]</h1>
+        <div class="front-page-wrapper">
+    <div class="front-page-main-info">
+      <img src="img/my-photo.jpg" alt="my photo" class="front-page-my-photo desktop-element" />
+
+      <h1 class="front-page-my-name">[alex tur]</h1>
 
         <h2 class="front-page-profession">
           <span class="profession-part-1">{Frontend}</span>
@@ -45,19 +60,19 @@
           build websites, small and medium web apps for business
         </p>
 
-        <button class="front-page-gallery-btn accent-btn">
+        <a href="#projects" class="front-page-gallery-btn accent-btn">
           See my recent works —
-        </button>
-
+        </a>
+    </div>
         <div class="front-page-my-info">
 
-          <img src="img/my-photo.jpg" alt="my photo" class="front-page-my-photo" />
+          <img src="img/my-photo.jpg" alt="my photo" class="front-page-my-photo mobile-element tablet-element" />
 
           <div class="front-page-about-me-container">
 
             <p class="front-page-my-decr mobile-element">About me in 2 minutes</p>
 
-            <p class="front-page-my-decr tablet-element">About me<br> in 2 minutes</p>
+            <p class="front-page-my-decr tablet-element desktop-element">About me<br> in 2 minutes</p>
 
             <button class="front-page-my-video-btn" id="my-video-btn">
               <i class="fas fa-play"></i>
@@ -68,6 +83,8 @@
         </div>
 
         <img src="img/laptop.svg" alt="" class="front-page-laptop" />
+
+        <div class="experience-wrapper">
         <div class="experience-container">
           <h3 class="experience-title">
             My Coding Skills & Experience
@@ -187,6 +204,8 @@
             <p class="experience-text">React Native</p>
           </div>
         </div>
+        </div>
+        </div>
       </div>
     </section>
 
@@ -200,7 +219,7 @@
           <span>apps]</span>
         </p>
 
-        <div class="tablet-element">
+        <div class="tablet-element desktop-element">
           <p class="about-descr">
             <span>[and help to create</span> 
             <span>great web apps]</span>
@@ -222,7 +241,7 @@
           functional corporate website for your business, interactive web app
           for SaaS, startup, or other services.
         </p>
-        <p class="about-text tablet-element">
+        <p class="about-text tablet-element desktop-element">
           / I will help you to create a<br> high-performance Landing Page,<br>
           functional corporate website for your<br> business, interactive web app
           for<br> SaaS, startup, or other services.
@@ -239,6 +258,8 @@
         <h3 class="section-title personal-projects-title">
           My personal _projects
         </h3>
+
+        <div class="personal-project-item-wrapper">
 
         <div class="personal-project-item">
           <div class="personal-project-item-container">
@@ -328,6 +349,7 @@
           </button>
         </div>
       </div>
+      </div>
     </section>
 
     <section class="team-projects">
@@ -336,6 +358,9 @@
         <h3 class="section-title team-projects-title">
           Teamwork _projects
         </h3>
+
+        <div class="team-project-item-wrapper">
+
         <div class="team-project-item">
           <div class="personal-project-item-container">
             <div class="projet-item-dot-container">
@@ -379,6 +404,7 @@
           </button>
         </div>
       </div>
+      </div>
     </section>
 
     <section class="callback-form">
@@ -416,7 +442,7 @@
         <h3 class="calculator-title section-title mobile-element">
           Calculate_ the cost of a future project
         </h3>
-        <h3 class="calculator-title section-title tablet-element">
+        <h3 class="calculator-title section-title tablet-element desktop-element">
           Calculate_<br> the cost of a<br> future project
         </h3>
         <div class="mobile-element">
@@ -427,7 +453,7 @@
           </p>
         </div>
 
-          <p class="calculator-descr tablet-element">
+          <p class="calculator-descr tablet-element desktop-element">
           <span>This is an approximate</span>
           <span>calculation.</span>
           </p>
