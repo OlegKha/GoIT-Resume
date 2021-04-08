@@ -86,6 +86,10 @@ body {
   display: none;
 }
 
+.mobile-element {
+  display: block;
+}
+
 .accent-btn {
   background: var(--c-accent);
   font-weight: bold;
@@ -138,6 +142,7 @@ body {
   pointer-events: none;
   display: block;
   background: var(--modal-bgd-dark);
+  z-index: 3;
 }
 
 .modal-active {
@@ -448,7 +453,7 @@ body {
   margin-bottom: 20px;
 }
 
-.front-page-my-decr {
+.front-page-my-descr {
   font-weight: bold;
   font-size: 15px;
   line-height: 140%;
@@ -468,6 +473,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 35px;
+  cursor: pointer;
 }
 
 .front-page-my-video-btn .fa-play {
@@ -1034,7 +1040,7 @@ body {
     margin-bottom: 0;
   }
 
-  .front-page-my-decr {
+  .front-page-my-descr {
     text-align: left;
   }
 
@@ -1285,7 +1291,7 @@ body {
     order: 3;
   }
 
-  .front-page-my-decr {
+  .front-page-my-descr {
     text-align: right;
   }
 
@@ -1494,6 +1500,38 @@ body {
 
   .calculator-icon {
     top: 360px;
+  }
+
+  .footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-main-content {
+    width: calc(50% + 100px);
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-my-profession {
+    margin-bottom: 0;
+  }
+
+  .request-received-container {
+    padding: 60px 130px 80px 130px;
+  }
+
+  .request-received-primary-msg {
+    width: 350px;
+  }
+
+  .request-received-secondary-msg {
+    width: auto;
+  }
+
+  .project-modal-container {
+    padding: 95px;
   }
 
 }
