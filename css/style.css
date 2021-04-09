@@ -81,11 +81,11 @@ body {
 /* COMMON */
 
 .tablet-element {
-  display: none;
+  display: none !important;
 }
 
 .desktop-element {
-  display: none;
+  display: none !important;
 }
 
 .mobile-element {
@@ -697,6 +697,12 @@ body {
   margin-bottom: 30px;
 }
 
+.swiper-container {
+  width: 300px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
 /* TEAM PROJECT */
 
 .team-projects .container {
@@ -1035,6 +1041,10 @@ body {
     margin-bottom: 0;
   }
 
+  .swiper-container {
+    width: 600px;
+  }
+
   .front-page-profession {
     margin: 20px 0 30px 0;
     font-size: 55px;
@@ -1249,11 +1259,15 @@ body {
   }
 
   .tablet-element {
-    display: none;
+    display: none !important;
   }
   
   .desktop-element {
-    display: block;
+    display: block !important;
+  }
+
+  .swiper-container {
+    width: 900px;
   }
 
   .front-page-profession {
